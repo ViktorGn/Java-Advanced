@@ -1,3 +1,4 @@
+/*
 import java.io.*;
 import java.util.ArrayDeque;
 
@@ -5,10 +6,10 @@ public class E09MaximumElement {
     public static void main(String[] args) throws IOException {
 //Input
         BufferedReader in = new BufferedReader(new InputStreamReader(System.in),10000000);
+        StringBuilder sb = new StringBuilder();
         int steps = Integer.parseInt(in.readLine());
-//        ArrayDeque <Integer> lifo = new ArrayDeque<>(steps);
-        int lifo[] = new int[steps];
-        int maxLifo[] = new int[steps];
+        ArrayDeque <Integer> lifo = new ArrayDeque<>(steps);
+        ArrayDeque <Integer> maxLifo = new ArrayDeque<>(steps);
         int currentMax = Integer.MIN_VALUE;
         int index =0;
         maxLifo[0]=currentMax;
@@ -33,8 +34,10 @@ public class E09MaximumElement {
                     currentMax=maxLifo[index];
                     break;
                 default:
-                    System.out.println(currentMax);
+                     sb.append(currentMax).append(System.lineSeparator());
             }
         }
+        System.out.println(sb.toString());
     }
 }
+*/
