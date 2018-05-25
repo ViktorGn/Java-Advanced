@@ -1,4 +1,3 @@
-/*
 import java.io.*;
 import java.util.ArrayDeque;
 
@@ -40,4 +39,3 @@ public class E09MaximumElement {
         System.out.println(sb.toString());
     }
 }
-*/
