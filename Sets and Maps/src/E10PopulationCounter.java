@@ -1,30 +1,6 @@
 import java.util.*;
 
 public class E10PopulationCounter {
-    static class City {
-        String name;
-        String country;
-        Long population;
-        City (String name,String country,Long population){
-            this.name=name;
-            this.country=country;
-            this.population=population;
-        }
-
-        String getName = this.name;
-        String getCountry=this.country;
-        Long getPopulation=this.population;
-    }
-    class Country {
-        String name;
-        Long population;
-        List <City> cities;
-        Country(String name, Long population, City city) {
-            this.name=name;
-            this.population=population;
-            this.cities=new LinkedList<>();
-        }
-    }
 
     public static void main(String[] args) {
         Map<String,Map<String,Long>> cities = new LinkedHashMap<>();

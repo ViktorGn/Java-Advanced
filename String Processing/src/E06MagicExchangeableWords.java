@@ -15,7 +15,10 @@ public class E06MagicExchangeableWords {
 
         String firstWord = input[0];
         String secondWord = input[1];
-
+        if (firstWord.length()>secondWord.length()) {
+            firstWord= input[1];
+            secondWord = input[0];
+        }
 
         int minLenght = Math.min(firstWord.length(), secondWord.length());
         int maxLenght = Math.max(firstWord.length(), secondWord.length());
